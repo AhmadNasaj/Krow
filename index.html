@@ -16,7 +16,7 @@
       <title>Movies Website</title>
    </head>
    <body>
-      <!-- Sidebar bg -->
+     
       
 
       <!--=============== HEADER ===============-->
@@ -35,7 +35,7 @@
                    
                    <div class="search__button" id="search-button">
                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
-                       <i class="fa-solid fa-xmark search__close"></i>
+                       
                    </div>
                </form>
            </div>
@@ -45,8 +45,34 @@
                   <li><a href="#">Random Video! <i class="fa-solid fa-shuffle"></i></a></li>
                   <li><a href="#">Suggestions? <i class="fa-solid fa-video"></i></a></li>
                   <li><a href="#">selections <i class="fa-solid fa-grip"></i></a></li>
-                  <li><a href="#">Updates <i class="fa-solid fa-bell"></i></a></li>
+                  <li><a onclick="toggleNotifi()" href="#">Updates <i class="fa-solid fa-bell"></i></a></li>
                </ul>
+               <div class="notifi-box" id="box">
+                  <br>
+                  <h2>Notifications </h2>
+                  <div class="notifi-item">
+                     <img class="avatar" src="./assets/img/avatar1.png" alt="img">
+                     <div class="text">
+                        <h4>Elias </h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      <img class="notifi-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+                  </div>
+                  <div class="notifi-item">
+                     <img class="avatar" src="./assets/img/avatar2.png" alt="img">
+                     <div class="text">
+                        <h4>John </h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      <img class="notifi-img" src="./assets/img/hunter-x-hunter-banner.jpg" alt="img">
+                  </div>
+         
+                  
+                
+         
+               </div>
             </nav>
             <div class="header-icon">
                <a href="#"><i class="fa-brands fa-youtube"></i></a>
@@ -55,7 +81,6 @@
                
                
              
-               <p></p>
             </div>
          </div>
       </header>

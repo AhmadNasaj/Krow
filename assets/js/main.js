@@ -26,13 +26,31 @@ function linkColor(){
 sidebarLink.forEach(l => l.addEventListener('click', linkColor))
 
 /*=============== SEARCH BAR JS ===============*/
-const toggleSearch = (search, button) =>{
-    const searchBar = document.getElementById(search),
-          searchButton = document.getElementById(button)
+// const toggleSearch = (search, button) =>{
+//     const searchBar = document.getElementById(search),
+//           searchButton = document.getElementById(button)
  
-    searchButton.addEventListener('click', () =>{
-        // We add the show-search class, so that the search bar expands
-        searchBar.classList.toggle('show-search')
-    })
- }
- toggleSearch('search-bar', 'search-button')
+//     searchButton.addEventListener('click', () =>{
+//         // We add the show-search class, so that the search bar expands
+//         searchBar.classList.toggle('show-search')
+//     })
+//  }
+//  toggleSearch('search-bar', 'search-button')
+
+
+/*=============== Notification ===============*/
+var box  = document.getElementById('box');
+var down = false;
+
+
+function toggleNotifi(){
+	if (down) {
+		box.style.height  = '0px';
+		box.style.opacity = 0;
+		down = false;
+	}else {
+		box.style.height  = '510px';
+		box.style.opacity = 1;
+		down = true;
+	}
+}
