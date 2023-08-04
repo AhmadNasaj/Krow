@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+      <script src="https://kit.fontawesome.com/8a3f12f9a4.js" crossorigin="anonymous"></script>
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive sidebar menu - Bedimcode</title>
+   </head>
+   <body>
+      <!-- Sidebar bg -->
+      
+
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__toggle" id="header-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+            <div class="header__logo">
+               <img src="assets/img/logo (2).png" alt="" class="sidebar__logo-img">
+               
+            </div>
+            <div class="container-search">
+               <form action="https://www.google.com/search" class="search" id="search-bar">
+                   <input type="search" placeholder="Search" name="q" class="search__input">
+                   
+                   <div class="search__button" id="search-button">
+                       <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                       <i class="fa-solid fa-xmark search__close"></i>
+                   </div>
+               </form>
+           </div>
+            <nav>
+               <ul>
+                 
+                  <li><a href="#">Random Video! <i class="fa-solid fa-shuffle"></i></a></li>
+                  <li><a href="#">Suggestions? <i class="fa-solid fa-video"></i></a></li>
+                  <li><a href="#">selections <i class="fa-solid fa-grip"></i></a></li>
+                  <li><a href="#">Updates <i class="fa-solid fa-bell"></i></a></li>
+               </ul>
+            </nav>
+            <div class="header-icon">
+               <i class="fa-brands fa-youtube"></i>
+               <i class="fa-brands fa-discord"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <p></p>
+            </div>
+         </div>
+      </header>
+
+      <!--=============== SIDEBAR ===============-->
+      <div class="sidebar show-sidebar" id="sidebar">
+         <nav class="sidebar__container">
+            <div class="sidebar__content">
+               <div class="sidebar__list">
+                  <a  href="#" class="sidebar__link active-link">
+                     <i class="fa-solid fa-house fa-2xs"></i>
+                     <span class="sidebar__link-name">Home</span>
+                     
+                  </a>
+                  
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-rss fa-2xs"></i>
+                     <span class="sidebar__link-name">Latest Reactions</span>
+                     
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-bookmark fa-2xs"></i>
+                     <span class="sidebar__link-name">Current Reactions</span>
+                    
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-circle-check fa-2xs"></i>
+                     <span class="sidebar__link-name">Completed Reactions</span>
+                     
+                  </a>
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-download fa-2xs"></i>
+                     <span class="sidebar__link-name">Downloads</span>
+                    
+                  </a>
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-history-line"></i>
+                     <span class="sidebar__link-name">History</span>
+                    
+                  </a>
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-thumbs-up"></i>
+                     <span class="sidebar__link-name">Like</span>
+                    
+                  </a>
+               </div>
+               
+               
+
+               <h3 class="sidebar__title">
+                  <span>Favorites</span>
+               </h3>
+
+               <div class="sidebar__list">
+                  <a href="#" class="sidebar__link">
+                     <img  src="./assets/img/One_piece.png" alt="">
+                     <span class="sidebar__link-name">One Piece</span>
+                    
+                  </a>
+
+                 
+
+               </div>
+
+               
+               
+            </div>
+
+            
+         </nav>
+      </div>
+
+      <!--=============== MAIN ===============-->
+      <main class="main container  main-pd" id="main">
+         <h1>Display </h1>
+      </main>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
