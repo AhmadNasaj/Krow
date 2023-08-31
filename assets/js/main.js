@@ -54,3 +54,41 @@ function toggleNotifi(){
 		down = true;
 	}
 }
+/*=============== Selections ===============*/
+var box1  = document.getElementById('box1');
+var down = false;
+
+
+function toggleSelect(){
+	if (down) {
+		box1.style.height  = '0px';
+		box1.style.opacity = 0;
+		down = false;
+	}else {
+		box1.style.height  = '510px';
+		box1.style.opacity = 1;
+		down = true;
+	}
+}
+
+// JavaScript Document
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+$(document).ready(function() {
+    $('#autoWidth1').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth1').removeClass('cS-hidden');
+        } 
+    });  
+  });
+
+  

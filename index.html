@@ -12,8 +12,11 @@
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Movies Website</title>
+      <link rel="stylesheet" href="assets/css/lightslider.css">
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/lightslider.js"></script>
+      <link rel="icon" href="./assets/img/logo (2).png" type="image/x-icon">
+      <title>Krow </title>
    </head>
    <body>
      
@@ -26,7 +29,7 @@
                <i class="ri-menu-line"></i>
             </div>
             <div class="header__logo">
-               <img src="assets/img/logo (2).png" alt="" class="sidebar__logo-img">
+               <a href="./index.html"><img src="assets/img/logo (2).png" alt="" class="sidebar__logo-img"></a>
                
             </div>
             <div class="container-search">
@@ -42,11 +45,60 @@
             <nav>
                <ul>
                  
-                  <li><a href="#">Random Video! <i class="fa-solid fa-shuffle"></i></a></li>
+                  <li><a href="./video.html">Random Video! <i class="fa-solid fa-shuffle"></i></a></li>
                   <li><a href="#">Suggestions? <i class="fa-solid fa-video"></i></a></li>
-                  <li><a href="#">selections <i class="fa-solid fa-grip"></i></a></li>
+                  <li><a onclick="toggleSelect()" href="#">selections <i class="fa-solid fa-grip"></i></a></li>
                   <li><a onclick="toggleNotifi()" href="#">Updates <i class="fa-solid fa-bell"></i></a></li>
                </ul>
+               <div class="notifi-box select-box" id="box1">
+                  <br>
+            
+                  <div class="notifi-item select-text">
+                     <img class="notifi-img select-img" src="./assets/img/One Piece Title.jpg" alt="img">
+                     <div class="text text1 ">
+                        <h4 style="color: #fff;">One Piece </h4>
+                        <div>
+                        <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 1070</span><span class="span2"><i class="fa-solid fa-microphone"></i>1030</span>
+                     </div>
+                      </div> 
+                      
+                  </div>
+                  <div class="notifi-item select-text">
+                     <img class="notifi-img select-img" src="./assets/img/One Piece Title.jpg" alt="img">
+                     <div class="text text1 ">
+                        <h4 style="color: #fff;">One Piece </h4>
+                        <div>
+                        <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 1070</span><span class="span2"><i class="fa-solid fa-microphone"></i>1030</span>
+                     </div>
+                      </div> 
+                      
+                  </div>
+                  <div class="notifi-item select-text">
+                     <img class="notifi-img select-img" src="./assets/img/cowboy-bebop-banner.jpg" alt="img">
+                     <div class="text text1 ">
+                        <h4 style="color: #fff;">cowboy-bebop </h4>
+                        <div>
+                        <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 150</span><span class="span2"><i class="fa-solid fa-microphone"></i>100</span>
+                     </div>
+                      </div> 
+                      
+                  </div>
+                  <div class="notifi-item select-text">
+                     <img class="notifi-img select-img" src="./assets/img/One Piece Title.jpg" alt="img">
+                     <div class="text text1 ">
+                        <h4 style="color: #fff;">One Piece </h4>
+                        <div>
+                        <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 1070</span><span class="span2"><i class="fa-solid fa-microphone"></i>1030</span>
+                     </div>
+                      </div> 
+                      
+                  </div>
+                 
+         
+                  
+                
+         
+               </div>
                <div class="notifi-box" id="box">
                   <br>
                   <h2>Notifications </h2>
@@ -90,7 +142,7 @@
          <nav class="sidebar__container">
             <div class="sidebar__content">
                <div class="sidebar__list">
-                  <a  href="#" class="sidebar__link active-link">
+                  <a  href="./index.html" class="sidebar__link active-link">
                      <i class="fa-solid fa-house fa-2xs"></i>
                      <span class="sidebar__link-name">Home</span>
                      
@@ -123,7 +175,7 @@
                      <span class="sidebar__link-name">History</span>
                     
                   </a>
-                  <a href="#" class="sidebar__link">
+                  <a href="./like.html" class="sidebar__link">
                      <i class="fa-solid fa-thumbs-up"></i>
                      <span class="sidebar__link-name">Like</span>
                     
@@ -157,7 +209,332 @@
 
       <!--=============== MAIN ===============-->
       <main class="main container  main-pd" id="main">
-         <h1>Display </h1>
+         <!-- =======box-slider ===== -->
+         
+         <h3 class="box-head">Latest Reactions</h3>
+         <br>
+         <section class="slider">
+            <ul id="autoWidth" class="cs-hidden">
+               <li class="item-a">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-b">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-c">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-d">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-e">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-f">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-g">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item-h">
+                  <div class="box">
+                     <!--===== img box ===== -->
+                     <div class="slide-img">
+                        <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                        <div class="overlayer">
+                           <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                     </div>
+                     <!-- == detail box == -->
+                     <div class="detail-box">
+                        <img src="./assets/img/One_piece.png" alt="">
+                        <div class="box-title">
+                           <h4>one piece Episod 24</h4>
+                           <p>one piece X wano arc</p>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               
+             </ul>
+             <br>
+           
+            
+         </section>
+         <br>
+         
+         <h3 class="box-head">Wano arc</h3>
+         <br>
+         <ul id="autoWidth1" class="cs-hidden">
+            <li class="item-a">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-b">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-c">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-d">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-e">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-f">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="#" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-g">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="item-h">
+               <div class="box">
+                  <!--===== img box ===== -->
+                  <div class="slide-img">
+                     <img src="./assets/img/haikyuu-banner.jpg" alt="">
+                     <div class="overlayer">
+                        <a href="./video.html" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                     </div>
+                  </div>
+                  <!-- == detail box == -->
+                  <div class="detail-box">
+                     <img src="./assets/img/One_piece.png" alt="">
+                     <div class="box-title">
+                        <h4>one piece Episod 24</h4>
+                        <p>one piece X wano arc</p>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            
+          </ul>
+     <br>
+     <br>
+     <br>
       </main>
       
       <!--=============== MAIN JS ===============-->

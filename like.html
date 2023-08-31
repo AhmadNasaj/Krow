@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+      <script src="https://kit.fontawesome.com/8a3f12f9a4.js" crossorigin="anonymous"></script>
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/lightslider.css">
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/lightslider.js"></script>
+
+      <link rel="icon" href="./assets/img/logo (2).png" type="image/x-icon">
+      <title>Krow </title>
+   </head>
+   <body>
+     
+      
+
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__toggle" id="header-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+            <div class="header__logo">
+               <a href="./index.html"><img src="assets/img/logo (2).png" alt="" class="sidebar__logo-img"></a>
+               
+            </div>
+            <div class="container-search">
+               <form action="https://www.google.com/search" class="search" id="search-bar">
+                   <input type="search" placeholder="Search" name="q" class="search__input">
+                   
+                   <div class="search__button" id="search-button">
+                       <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                       
+                   </div>
+               </form>
+           </div>
+           <nav>
+            <ul>
+              
+               <li><a href="./video.html">Random Video! <i class="fa-solid fa-shuffle"></i></a></li>
+               <li><a href="#">Suggestions? <i class="fa-solid fa-video"></i></a></li>
+               <li><a onclick="toggleSelect()" href="#">selections <i class="fa-solid fa-grip"></i></a></li>
+               <li><a onclick="toggleNotifi()" href="#">Updates <i class="fa-solid fa-bell"></i></a></li>
+            </ul>
+            <div class="notifi-box select-box" id="box1">
+               <br>
+         
+               <div class="notifi-item select-text">
+                  <img class="notifi-img select-img" src="./assets/img/One Piece Title.jpg" alt="img">
+                  <div class="text text1 ">
+                     <h4 style="color: #fff;">One Piece </h4>
+                     <div>
+                     <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 1070</span><span class="span2"><i class="fa-solid fa-microphone"></i>1030</span>
+                  </div>
+                   </div> 
+                   
+               </div>
+               <div class="notifi-item select-text">
+                  <img class="notifi-img select-img" src="./assets/img/One Piece Title.jpg" alt="img">
+                  <div class="text text1 ">
+                     <h4 style="color: #fff;">One Piece </h4>
+                     <div>
+                     <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 1070</span><span class="span2"><i class="fa-solid fa-microphone"></i>1030</span>
+                  </div>
+                   </div> 
+                   
+               </div>
+               <div class="notifi-item select-text">
+                  <img class="notifi-img select-img" src="./assets/img/cowboy-bebop-banner.jpg" alt="img">
+                  <div class="text text1 ">
+                     <h4 style="color: #fff;">cowboy-bebop </h4>
+                     <div>
+                     <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 150</span><span class="span2"><i class="fa-solid fa-microphone"></i>100</span>
+                  </div>
+                   </div> 
+                   
+               </div>
+               <div class="notifi-item select-text">
+                  <img class="notifi-img select-img" src="./assets/img/One Piece Title.jpg" alt="img">
+                  <div class="text text1 ">
+                     <h4 style="color: #fff;">One Piece </h4>
+                     <div>
+                     <span class="span1"><i class="fa-solid fa-closed-captioning"></i> 1070</span><span class="span2"><i class="fa-solid fa-microphone"></i>1030</span>
+                  </div>
+                   </div> 
+                   
+               </div>
+              
+      
+               
+             
+      
+            </div>
+            <div class="notifi-box" id="box">
+               <br>
+               <h2>Notifications </h2>
+               <div class="notifi-item">
+                  <img class="avatar" src="./assets/img/avatar1.png" alt="img">
+                  <div class="text">
+                     <h4>Elias </h4>
+                     <p>@lorem ipsum dolor sit amet</p>
+                     <p>@lorem ipsum dolor sit amet</p>
+                   </div> 
+                   <img class="notifi-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+               </div>
+               <div class="notifi-item">
+                  <img class="avatar" src="./assets/img/avatar2.png" alt="img">
+                  <div class="text">
+                     <h4>John </h4>
+                     <p>@lorem ipsum dolor sit amet</p>
+                     <p>@lorem ipsum dolor sit amet</p>
+                   </div> 
+                   <img class="notifi-img" src="./assets/img/hunter-x-hunter-banner.jpg" alt="img">
+               </div>
+      
+               
+             
+      
+            </div>
+         </nav>
+            <div class="header-icon">
+               <a href="#"><i class="fa-brands fa-youtube"></i></a>
+               <a href="#"><i class="fa-brands fa-discord"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               
+               
+             
+            </div>
+         </div>
+      </header>
+
+      <!--=============== SIDEBAR ===============-->
+      <div class="sidebar show-sidebar" id="sidebar">
+         <nav class="sidebar__container">
+            <div class="sidebar__content">
+               <div class="sidebar__list">
+                  <a  href="./index.html" class="sidebar__link active-link">
+                     <i class="fa-solid fa-house fa-2xs"></i>
+                     <span class="sidebar__link-name">Home</span>
+                     
+                  </a>
+                  
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-rss fa-2xs"></i>
+                     <span class="sidebar__link-name">Latest Reactions</span>
+                     
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-bookmark fa-2xs"></i>
+                     <span class="sidebar__link-name">Current Reactions</span>
+                    
+                  </a>
+
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-circle-check fa-2xs"></i>
+                     <span class="sidebar__link-name">Completed Reactions</span>
+                     
+                  </a>
+                  <a href="#" class="sidebar__link">
+                     <i class="fa-solid fa-download fa-2xs"></i>
+                     <span class="sidebar__link-name">Downloads</span>
+                    
+                  </a>
+                  <a href="#" class="sidebar__link">
+                     <i class="ri-history-line"></i>
+                     <span class="sidebar__link-name">History</span>
+                    
+                  </a>
+                  <a href="./like.html" class="sidebar__link">
+                     <i class="fa-solid fa-thumbs-up"></i>
+                     <span class="sidebar__link-name">Like</span>
+                    
+                  </a>
+               </div>
+               
+               
+
+               <h3 class="sidebar__title">
+                  <span>Favorites</span>
+               </h3>
+
+               <div class="sidebar__list">
+                  <a href="#" class="sidebar__link">
+                     <img  src="./assets/img/One_piece.png" alt="">
+                     <span class="sidebar__link-name">One Piece</span>
+                    
+                  </a>
+
+                 
+
+               </div>
+
+               
+               
+            </div>
+
+            
+         </nav>
+      </div>
+
+      <!--=============== MAIN ===============-->
+      <main class="main container  main-pd" id="main">
+         <section class="video1">
+            <div class="video-container1">
+               <iframe
+                 width="400"
+                 height="240"
+                 src="https://www.youtube.com/embed/VIDEO_ID"
+                 frameborder="0"
+                 allowfullscreen
+               ></iframe>
+            </div>
+            <div class="like-video">
+               
+                  
+                  <div class="like-item">
+                     
+                     <span class="numb">1</span>
+                     <img class="like-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+                     <div class="text">
+                        <h4>@lorem ipsum dolor sit amet</h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      
+                  </div>
+                  <div class="like-item">
+                     
+                     <span class="numb">1</span>
+                     <img class="like-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+                     <div class="text">
+                        <h4>@lorem ipsum dolor sit amet</h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      
+                  </div>
+                  <div class="like-item">
+                     
+                     <span class="numb">1</span>
+                     <img class="like-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+                     <div class="text">
+                        <h4>@lorem ipsum dolor sit amet</h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      
+                  </div>
+                  <div class="like-item">
+                     
+                     <span class="numb">1</span>
+                     <img class="like-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+                     <div class="text">
+                        <h4>@lorem ipsum dolor sit amet</h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      
+                  </div>
+                  <div class="like-item">
+                     
+                     <span class="numb">1</span>
+                     <img class="like-img" src="./assets/img/haikyuu-banner.jpg" alt="img">
+                     <div class="text">
+                        <h4>@lorem ipsum dolor sit amet</h4>
+                        <p>@lorem ipsum dolor sit amet</p>
+                      </div> 
+                      
+                  </div>
+                  
+         
+                  
+                
+         
+               
+            </div>
+         </section>
+        
+      </main>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
